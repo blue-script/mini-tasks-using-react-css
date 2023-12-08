@@ -5,8 +5,8 @@ import s2 from '../../s1-main/App.module.css'
 /*
 * 1 - описать типы AffairPriorityType, AffairType +
 * 2 - указать нужный тип для defaultAffairs +
-* 3 - дописать типы и логику функции filterAffairs и проверить её тестами
-* 4 - выполнить пункт 3 для функции deleteAffair
+* 3 - дописать типы и логику функции filterAffairs и проверить её тестами +
+* 4 - выполнить пункт 3 для функции deleteAffair+
 * 5 - указать нужный тип в useState с affairs
 * 6 - дописать тип и логику функции deleteAffairCallback
 * 7 - в файле Affairs.tsx дописать типизацию пропсов
@@ -38,9 +38,8 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
     return filter === 'all' ? affairs : affairs.filter(a => a.priority === filter)
 }
-export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
-
-    return affairs // need to fix
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
+    return affairs.filter(a => a._id !== _id)
 }
 
 function HW2() {
