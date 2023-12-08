@@ -53,3 +53,6 @@
     flex-wrap: wrap;
     max-width: 450px;
 }
+ .affairs.filtered {
+     max-width: 200px;
+ }
