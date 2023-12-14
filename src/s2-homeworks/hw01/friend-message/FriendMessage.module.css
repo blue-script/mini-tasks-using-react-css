@@ -18,9 +18,9 @@
 .friendText {
     margin-left: 14px;
     max-width: 522px;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 0;
     padding: 0 14px 0 14px;
-    background-color: #F5F7FB;
+    background-color: rgba(255,255,255, 0.3);
     filter: drop-shadow(0px 1px 2px rgba(29, 33, 38, 0.10)) drop-shadow(0px 5px 20px rgba(29, 33, 38, 0.03));
     color: #000;
     font-size: 18px;
@@ -33,9 +33,12 @@
     position: absolute;
     bottom: 0;
     left: -14px;
-    border: 14px solid transparent;
-    border-bottom: 14px solid #F5F7FB;
-    border-right: 14px solid #F5F7FB;
+    /*border: 14px solid transparent;*/
+    /*border-bottom: 14px solid #F5F7FB;*/
+    /*border-right: 14px solid #F5F7FB;*/
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 14px, rgba(255,255,255, 0.3) 0);
 }
 
 .friendName {
