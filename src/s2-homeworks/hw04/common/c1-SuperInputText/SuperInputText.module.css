@@ -2,19 +2,35 @@
 }
 
 .input {
+    width: 372px;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    outline: none;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
 }
 
 .superInput {
+    margin-top: 20px;
 }
 
 .errorInput {
+    border-color: #CC1439;
+
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: #CC1439;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
 }
