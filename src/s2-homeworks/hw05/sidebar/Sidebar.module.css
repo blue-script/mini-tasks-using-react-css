@@ -11,7 +11,6 @@
 .sidebar.open {
     display: block;
     position: absolute;
-    transition: block 1s ease;
     z-index: 9999;
 }
 
