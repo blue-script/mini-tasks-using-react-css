@@ -1,9 +1,13 @@
 .select {
+    min-width: 180px;
+    height: 25px;
 }
 
 .select:focus {
+    cursor: pointer;
 }
 
 
 .option:hover {
+    background-color: #1E90FF;
 }
