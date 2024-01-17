@@ -4,16 +4,21 @@
 .radio::before {
 }
 
-
 .radio:checked::before {
 }
 
 .label {
     display: flex;
     gap: 12px;
+    cursor: pointer;
 }
 
 .options {
     display: flex;
     flex-direction: column;
+
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }

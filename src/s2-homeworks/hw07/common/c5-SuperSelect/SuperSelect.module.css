@@ -1,13 +1,18 @@
 .select {
     min-width: 180px;
-    height: 25px;
-}
 
-.select:focus {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
     cursor: pointer;
 }
 
+.select:focus {
+
+}
 
 .option:hover {
-    background-color: #1E90FF;
 }
+
