@@ -1,22 +1,43 @@
 .item {
+    border-bottom: 1px solid #E5E5E5;
+    background-color: #fff0;
+    width: 303px;
+    padding: 16px;
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
 
 .users {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    border: none;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .container {
+    box-sizing: border-box;
+    width: 606px;
+    padding: 20px 0;
 }
 
 .thead {
+    background-color: #E5E5E5;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.nameCol {
+.item > .nameCol {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 16px;
 }
 
 .ageCol {
