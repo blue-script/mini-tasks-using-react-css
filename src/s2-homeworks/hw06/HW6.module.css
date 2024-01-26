@@ -1,5 +1,10 @@
 .buttonsContainer {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 .editableSpanContainer {
+    margin-bottom: 10px;
+    min-height: 46px;
 }
