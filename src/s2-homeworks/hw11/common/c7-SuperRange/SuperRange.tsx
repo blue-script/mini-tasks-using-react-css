@@ -5,31 +5,22 @@ const SuperRange: React.FC<SliderProps> = (props) => {
     return (
         <Slider
             sx={{ // стили для слайдера // пишет студент
-                width: 160,
-                color: '#0c2',
+                margin: '0 30px',
+                boxSizing: 'border-box',
+                width: '147px',
+                borderRadius: '10px',
                 '& .MuiSlider-rail': {
                     backgroundColor: '#8b8b8b'
                 },
-                '& .MuiSlider-thumb:hover': {
-                    boxShadow: '0 0 0 8px rgba(58, 133, 137, 0.16)',
-                },
                 '& .MuiSlider-thumb': {
-                    border: '2px solid #0c2',
-                    color: 'white',
-
-                    // green point
-                    // position: 'relative',
-                    // '&::before': {
-                    //     content: '""',
-                    //     position: 'absolute',
-                    //     top: '50%',
-                    //     left: '50%',
-                    //     transform: 'translate(-50%, -50%)',
-                    //     width: 6,
-                    //     height: 6,
-                    //     borderRadius: '50%',
-                    //     backgroundColor: '#0c2',
-                    // },
+                    color: '#00CC22',
+                    border: '6px solid #00CC22',
+                },
+                '& .MuiSlider-thumb:before': {
+                    border: '5px solid white',
+                },
+                '& .MuiSlider-track': {
+                    color: '#00CC22',
                 },
             }}
 
