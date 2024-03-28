@@ -30,6 +30,9 @@ const HW14 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<string[]>([])
 
+    // @ts-ignore
+    window.store = techs
+
     const sendQuery = (value: string) => {
         setLoading(true)
         getTechs(value)
@@ -40,6 +43,7 @@ const HW14 = () => {
                 if (res) {
                     setTechs(res.data.techs)
                 }
+                setLoading(false)
                 //
             })
     }
@@ -50,7 +54,8 @@ const HW14 = () => {
 
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
+        const newParam = {find: value}
+        setSearchParams(newParam)
         //
     }
 
