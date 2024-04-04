@@ -1,3 +1,10 @@
+.container {
+    max-width: 800px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+
 .tech {
     width: 50vw;
 }
@@ -10,16 +17,25 @@
     width: 50vw;
 }
 
-.developerHeader {
+.techHeader span {
+    padding-left: 5px;
+}
 
+.developerHeader span {
+    padding-left: 5px;
 }
 
 .row {
     display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;;
 }
 
 .rowHeader {
     display: flex;
+    font-weight: 600;
+    background-color: #E5E5E5;
+    padding: 10px;
 }
 
 .loading {

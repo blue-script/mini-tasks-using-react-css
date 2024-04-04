@@ -57,6 +57,7 @@ const HW15 = () => {
                     setTechs(res.data.techs)
                     setTotalCount(res.data.totalCount)
                 }
+                setLoading(false)
             })
     }
 
@@ -66,8 +67,8 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
 
-        setSearchParams(`page=${newPage}&count: ${newCount}`)
-        sendQuery({page: newPage, count: newCount})
+        setSearchParams([["page", newPage.toString()], ['count', newCount.toString()], ['sort', sort]])
+        // sendQuery({page: newPage, count: newCount})
     }
 
     const onChangeSort = (newSort: string) => {
@@ -77,16 +78,17 @@ const HW15 = () => {
         setSort(newSort)
         setPage(1)
 
-        setSearchParams(`sort=${newSort}`)
-        sendQuery({sort: newSort})
+        setSearchParams([['sort', `${newSort}`], ["page", page.toString()], ['count', count.toString()]])
+        // sendQuery({sort: newSort})
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
+        // sendQuery({page: params.page, count: params.count})
+        sendQuery(params)
         setPage(+params.page || 1)
         setCount(+params.count || 4)
-    }, [])
+    }, [searchParams])
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
@@ -101,7 +103,7 @@ const HW15 = () => {
     ))
 
     return (
-        <div id={'hw15'}>
+        <div id={'hw15'} className={s.container}>
             <div className={s2.hwTitle}>Homework #15</div>
 
             <div className={s2.hw}>

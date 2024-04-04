@@ -1,5 +1,14 @@
 .pagination {
     display: flex;
+    font-size: 14px;
+    color: #0d0b0c;
+    justify-content: start;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.pagination select {
+    min-width: 40px;
 }
 
 .text1 {
