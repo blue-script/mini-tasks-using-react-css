@@ -43,6 +43,8 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                 count={lastPage}
                 onChange={onChangeCallback}
                 color="primary"
+                shape="rounded"
+                variant="outlined"
                 hideNextButton
                 hidePrevButton
             />
